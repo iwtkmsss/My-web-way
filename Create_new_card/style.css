@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cards {
+    justify-items: center;
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    font-family: "Courier New", serif;
+}
+
+.card {
+    border: solid 0.25rem black;
+    border-radius: 10px;
+    box-shadow:
+        1rem 1rem 0 -0.25rem greenyellow,
+        1rem 1rem 0 0 black;
+    font-weight: bolder;
+    transition:
+            font-size 0.4s ease,
+            background-color 0.4s ease,
+            box-shadow 0.4s ease,
+            transform 0.3s ease;
+    margin: 1.5em;
+    padding: 15px;
+    margin-bottom: 40px;
+    width: 20em;
+}
+
+.card>ol {
+    list-style-type: none;
+}
+
+.card:hover {
+    box-shadow:
+        0.5rem 0.5rem 0 -0.25rem #47621b,
+        0.5rem 0.5rem 0 0 black;
+    background-color: greenyellow;
+}
+
+.button {
+    height: 2.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    position: absolute;
+    border-style: hidden;
+    border-radius: 15px;
+    background-color: transparent;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 10px;
+    transition: box-shadow 0.4s ease,
+                background-color 0.4s ease,
+                font-size 0.4s ease;
+}
+
+.btn:hover {
+    transition: 0.3s;
+}
+
+.button__line {
+    position: absolute;
+    display: block;
+    margin: 2px;
+}
+
+.button__line--top {
+    top: 0;
+    left: -1000%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff67c1);
+}
+
+.btn:hover .button__line--top {
+    left: 100%;
+    transition: 0.4s;
+    transition-delay: 0.05s;
+}
+
+.button__line--bottom {
+    bottom: 0;
+    right: -1000%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #ff67c1);
+}
+
+.btn:hover .button__line--bottom {
+    right: 100%;
+    transition: 0.4s;
+    transition-delay: 0.05s;
+}
+
+.button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #ff67c1);
+}
+
+.btn:hover .button__line--left {
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.button__line--right {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ff67c1);
+}
+
+.btn:hover .button__line--right {
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.btn:hover {
+    font-size: 1.1em;
+    box-shadow: 0 0 10px #ff67c1, 0 0 30px #ff67c1;
+    background-color: #ff67c1;
+    transition-delay: 0.4s;
+}
+
+.generate-btn {
+    background-color: transparent;
+    border-style: none;
+    font-family: "Courier New", serif;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.generate-btn:hover {
+    cursor: pointer;
+}
