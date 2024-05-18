@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main-container {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-gap: 10px;
+    align-content: center;
+    place-items: center; 
+    height: 100vh; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #ff67c1;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ff67c1, 0 0 30px #ff67c1;
+}
+
+progress {
+    appearance: none;
+    height: 0.5em;
+    align-content: center;
+    justify-content: center;
+  }
+
+  progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #ff67c1;
+    border-radius: 5px 0 0 5px;
+  }
+
+.name {
+    color: #ff67c1;
+    font-size: large;
+    font-weight: bold;
+    font-size: large;
+}
